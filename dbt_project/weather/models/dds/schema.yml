@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+  - name: city_hub
+    description: "Hub of cities"
+    columns:
+      - name: city_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: city
+        data_tests:
+          - hub_check
+  - name: city_hourly_hist_sat
+    description: "Hourly satellite of cities"
+    columns:
+      - name: city_id
+        description: "Foreign key for this table"
+        data_tests:
+          - not_null
+
+  - name: city_daily_hist_sat
+    description: "Hourly satellite of cities"
+    columns:
+      - name: city_id
+        description: "Foreign key for this table"
+        data_tests:
+          - not_null
+
+

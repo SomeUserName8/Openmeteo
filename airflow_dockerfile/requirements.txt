@@ -1,0 +1,6 @@
+pandas
+requests
+psycopg
+SQLAlchemy
+dbt-core
+dbt-postgres

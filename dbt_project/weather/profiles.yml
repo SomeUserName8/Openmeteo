@@ -1,0 +1,12 @@
+weather:
+  outputs:
+    dev:
+      dbname: postgres
+      host: host.docker.internal
+      pass: user
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: user
+  target: dev

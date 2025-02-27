@@ -1,0 +1,10 @@
+snapshots:
+  - name: city_hourly_fore_snap
+    relation: ref('city_hourly_fore_sat')
+    description:  markdown_string
+    config:
+      database: postgres
+      schema: dds
+      strategy: timestamp 
+      unique_key: time
+      updated_at: upload_date
